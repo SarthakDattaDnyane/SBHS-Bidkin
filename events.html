@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBHS Bidkin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="width-100 top-header">
+        <div class="container">
+            <b>NEWS : </b>
+            <marquee>My School : Shaping Futures, Inspiring Excellence.</marquee>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="heads">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+
+                <div class="menu">
+                    <a href="#menu" class="openicon">&#9776</a>
+                    <div id="menu">
+                        <div class="menu-inner">
+                            <a href="#" class="closeicon">&#x2715</a>
+
+                            <ul>
+                                <li><a href="index.html" style="--i:1" class="active">Home</a></li>
+                                <li><a href="about-us.html" style="--i:2"">About Us</a></li>
+                                <li><a href=" admission.html" style="--i:3"">Admission</a></li>
+                                <li><a href=" gallery.html" style="--i:4">Gallery</a></li>
+                                <li><a href="noticeboard.html" style="--i:5">Notice Board</a></li>
+                                <li><a href="events.html" style="--i:6">Events</a></li>
+                                <li><a href="tutorial.html" style="--i:7">Tutorial</a></li>
+                                <li><a href="contactus.html" style="--i:8">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <body>
+        <div class="events-page">
+            <!-- Header Section -->
+            <header id="header">
+                <h1>🎉 School Events</h1>
+                <p id="current-date"></p>
+            </header>
+
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h2>Explore A World of Activities</h2>
+                <p>From cultural festivities to academic achievements, our events inspire, engage, and celebrate
+                    excellence!</p>
+            </div>
+
+            <!-- Events Section -->
+            <section id="events-list">
+                <div class="event-item">
+                    <h3>Annual Day Celebration</h3>
+                    <p class="event-date">📅 Date: 15th March 2025</p>
+                    <p>An evening filled with spectacular performances, awards, and celebrations. A day to cherish and
+                        remember!</p>
+                </div>
+
+                <div class="event-item">
+                    <h3>Science Exhibition</h3>
+                    <p class="event-date">📅 Date: 10th April 2025</p>
+                    <p>A creative display of science and technology projects showcasing students' innovative ideas and
+                        efforts.</p>
+                </div>
+
+                <div class="event-item">
+                    <h3>Sports Week</h3>
+                    <p class="event-date">📅 Date: 1st May 2025</p>
+                    <p>A thrilling week of competitions, teamwork, and sportsmanship in various indoor and outdoor
+                        games.</p>
+                </div>
+
+                <div class="event-item">
+                    <h3>Parent-Teacher Meet</h3>
+                    <p class="event-date">📅 Date: 20th May 2025</p>
+                    <p>Interactive sessions for discussing students’ progress, performance, and future goals.</p>
+                </div>
+
+                <div class="event-item">
+                    <h3>Art and Culture Festival</h3>
+                    <p class="event-date">📅 Date: 5th June 2025</p>
+                    <p>An exhibition of traditional and contemporary art forms through dances, music, and paintings.</p>
+                </div>
+
+                <div class="event-item">
+                    <h3>Charity Event - Helping Hands</h3>
+                    <p class="event-date">📅 Date: 15th July 2025</p>
+                    <p>A fundraiser supporting community welfare with engaging activities and campaigns by students.</p>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer>
+                <p>📧 For event-related queries, contact: <a href="mailto:events@school.com">events@school.com</a></p>
+                <p>&copy; 2025 School Events | All Rights Reserved.</p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
+<style>
+    /* Base Styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        color: #333;
+    }
+
+    /* Events Page Container */
+    .events-page {
+        max-width: 1200px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Header Section */
+    #header {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    #header h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #header p {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #fff5f5;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        text-align: center;
+        padding: 30px 20px;
+        background: #f5f7fa;
+    }
+
+    .hero-section h2 {
+        font-size: 24px;
+        color: #2c3e50;
+        margin: 0;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        color: #606c76;
+        margin-top: 10px;
+    }
+
+    /* Events List Section */
+    #events-list {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .event-item {
+        background: #eef2f3;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        animation: slideIn 0.8s ease-out;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .event-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .event-item h3 {
+        font-size: 22px;
+        margin: 0;
+        color: #2c3e50;
+    }
+
+    .event-item .event-date {
+        font-size: 16px;
+        color: #e74c3c;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .event-item p {
+        font-size: 14px;
+        color: #7f8c8d;
+        margin-top: 10px;
+    }
+
+    /* Footer Section */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #f1c40f;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #events-list {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<script>document.addEventListener( "DOMContentLoaded", () =>
+    {
+        const currentDate = document.getElementById( "current-date" );
+
+        // Display current date
+        currentDate.textContent = `📅 Date: ${ new Date().toLocaleDateString() }`;
+    } );</script>

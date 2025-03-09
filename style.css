@@ -1,0 +1,436 @@
+*{
+    font-family: sans-serif, arial;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:target {
+display:block !important;
+}
+
+.w-100 {
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+}
+
+.top-header {
+    background: rgb(0, 64, 255);
+    padding: 12px 0px 10px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.top-header b{
+    position: relative;
+    z-index: 9;
+    background: white;
+    color: red;
+    padding: 16px 0px 11px 4px;
+}
+
+.top-header marquee{
+    color: white;
+    width: calc(100% - 90px);
+    font-weight: bolder;
+}
+
+header{
+    box-shadow: 0px 0px 10px 0px #0000001f;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.heads{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+}
+
+.logo{
+    max-width: 30%;
+    min-width: 200px;
+}
+
+.logo img{
+    height: 85px;
+    transition: transform 0.5s ease;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.menu{
+    max-width: 70%;
+    min-width: 100px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.menu ul li{
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+.menu ul li a.active {
+    color: #ff523b;
+}
+
+.openicon{
+    display: none;
+    position: relative;
+    float: right;
+    font-size: 34px;
+    right: 8px;
+    font-weight: bold;
+}
+
+.closeicon{
+    display: none;
+    float: right;
+    font-size: 28px;
+}
+
+
+/******** Moblie and Ipad Screen ********************/
+
+@media screen and (max-width: 840px) {
+    .openicon, .closeicon {
+        display: block;
+    }
+    #menu{
+        position: fixed;
+        left: 0px;
+        background: #00000094;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        text-align: left;
+        z-index: 9999;
+        display: none;
+    }
+    .menu-inner{
+        background: white;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 70%;
+        position: absolute;
+        padding: 20px;
+    }
+    #menu ul{
+        display: block;
+        margin-top: 45px;
+    }
+    #menu ul li{
+        margin-bottom: 25px;
+    }
+}
+
+.slider{
+    object-fit: cover;
+    width: 100%;
+    height: 580px;
+}
+
+/*------- IPad Screens --------*/
+
+@media screen and (max-width: 768px) {
+
+    .slider{
+        height: 350px;
+    }
+}
+
+/*------- Mobile Screen --------*/
+
+@media screen and (max-width: 480px){
+    .slider{
+        height: 210px;
+    }
+}
+
+
+.full-panel{
+    background: #f0f3fa;
+    padding: 60px 0px;
+}
+
+.panels{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inpanels{
+    width: 32%;
+    background:white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.inpanels h2{
+    color: rgb(0, 64, 255);
+    padding: 0px 20px 5px 5px;
+    margin-bottom: 40px;
+    text-align: left;
+    border-bottom: 1px solid rgb(0, 64, 255);
+}
+
+.inpanels marquee {
+    height: 380px;
+}
+
+.inpanels li{
+    list-style: none;
+    font-size: 16px;
+    padding: 10px 0px;
+    line-height: 26px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.inpanels li i{
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+}
+
+.events li {
+    display: flex;
+}
+.inpanels li b {
+    text-align: center;
+    background: rgb(0, 64, 255);
+    font-size: 14px;
+    color: white;
+    margin-right: 5px;
+    padding: 9px 14px;
+    line-height: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.inpanels img{
+    padding: 0px 20px 20px 20px;
+}
+.inpanels h3{
+    font-size: 22px;
+    text-align: center;
+}
+.inpanels p{
+    text-align: center;
+}
+
+
+/*----------------- Ipad Screen-----------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .inpanels {
+        width: 70%;
+    }
+}
+
+/*----------------- Moblie Screen-----------------------*/
+
+@media  screen and (max-width:500px){
+    
+    .inpanels {
+        width: 100%;
+    }
+}
+
+.heading {
+    font-size: 32px;
+    margin: 100px 0px 60px 0px;
+    text-align: center;
+}
+
+.heading span{
+    font-size: 32px;
+    color: rgb(0, 64, 255);
+}
+
+.aboutus{
+    margin: 60px 0px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.aboutus img{
+    width: 95%;
+    max-width: 500px;
+    margin:0px auto;
+    margin-top: 30px;
+}
+
+.aboutus h2 {
+    margin: 20px 0px 30px 0px;
+}
+
+.aboutus p, .aboutus b{
+    line-height: 31px;
+    margin: 18px 0px;
+}
+
+.gallery{
+    margin: 60px 0px;
+    display: grid;
+    gap: 20px 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery img{
+    border-radius: 10px;
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+
+footer{
+    margin-top: 50px;
+    background: rgb(0, 64, 255);
+    color: white;
+    padding: 40px 0px;
+}
+
+.foots{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 20px 0px 20px 20px;
+    display: grid;
+    gap: 50px;
+    margin: 0px auto;
+}
+
+.foots p{
+    padding-right: 60px;
+    line-height: 28px;
+}
+
+.foots table td{
+    padding: 10px 0px;
+}
+
+.col-foot h2{
+    font-size: 18px;
+    margin-bottom: 18px;
+    list-style-type: disclosure-closed;
+}
+
+/* By Idea  */
+
+@media  screen and (max-width:361px){
+
+    body{
+        width: fit-content;
+    }
+}
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  
+  @keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+  
+    50% {
+        transform: translateY(-24px);
+    }
+  
+    100% {
+        transform: translateY(0);
+    }
+  }

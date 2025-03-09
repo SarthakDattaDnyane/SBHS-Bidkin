@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBHS Bidkin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="width-100 top-header">
+        <div class="container">
+            <b>NEWS : </b>
+            <marquee>My School : Shaping Futures, Inspiring Excellence.</marquee>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="heads">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+
+                <div class="menu">
+                    <a href="#menu" class="openicon">&#9776</a>
+                    <div id="menu">
+                        <div class="menu-inner">
+                            <a href="#" class="closeicon">&#x2715</a>
+
+                            <ul>
+                                <li><a href="index.html" style="--i:1" class="active">Home</a></li>
+                                <li><a href="aboutus.html" style="--i:2"">About Us</a></li>
+                                <li><a href=" admission.html" style="--i:3"">Admission</a></li>
+                                <li><a href=" gallery.html" style="--i:4">Gallery</a></li>
+                                <li><a href="noticeboard.html" style="--i:5">Notice Board</a></li>
+                                <li><a href="events.html" style="--i:6">Events</a></li>
+                                <li><a href="tutorial.html" style="--i:7">Tutorial</a></li>
+                                <li><a href="contactus.html" style="--i:8">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <body>
+        <div class="contact-page">
+            <!-- Header Section -->
+            <header id="header">
+                <h1>📞 Contact Us</h1>
+                <p>We’d love to hear from you! Reach out to us for any queries or assistance.</p>
+            </header>
+
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h2>Stay Connected with Us</h2>
+                <p>Your feedback and inquiries are important to us.</p>
+            </div>
+
+            <!-- Contact Information Section -->
+            <section class="contact-info">
+                <div class="info-item">
+                    <h3>📍 Address</h3>
+                    <p>P74X+6XP S.B.HIGH SCHOOL,BIDKIN, Krishnapur, Bidkin, Maharashtra 431105</p>
+                </div>
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@school.com">info@school.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p>+91 888 802 6923</p>
+                </div>
+                <div class="info-item">
+                    <h3>🕒 Office Hours</h3>
+                    <p>Monday - Friday: 8:00 AM to 5:00 PM<br>Saturday: 9:00 AM to 2:00 PM</p>
+                </div>
+            </section>
+
+            <!-- Feedback Form Section -->
+            <section class="feedback-form">
+                <h2>Send Us a Message</h2><br>
+                <form id="feedback-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" rows="5"
+                        required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Footer Section -->
+            <footer>
+                <p>📧 For inquiries: <a href="mailto:info@school.com">info@school.com</a></p>
+                <p>📍 S.B.High School, Bidkin | &copy; 2025 All Rights Reserved.</p>
+            </footer>
+
+            <!-- Success Message -->
+            <div id="success-message" class="success hidden">
+                <p>✅ Your message has been successfully submitted! Thank you for reaching out to us.</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
+<style>
+    /* Base Styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        color: #333;
+    }
+
+    /* Contact Page Container */
+    .contact-page {
+        max-width: 1200px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Header Section */
+    #header {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    #header h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #header p {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #e0e7ff;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        text-align: center;
+        padding: 30px 20px;
+        background: #f5f7fa;
+    }
+
+    .hero-section h2 {
+        font-size: 24px;
+        color: #2c3e50;
+        margin: 0;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        color: #606c76;
+        margin-top: 10px;
+    }
+
+    /* Contact Information Section */
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .info-item {
+        background: #eef2f3;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .info-item h3 {
+        margin: 0;
+        color: #2c3e50;
+    }
+
+    .info-item p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #606c76;
+    }
+
+    .info-item a {
+        color: #2575fc;
+        text-decoration: none;
+    }
+
+    .info-item a:hover {
+        text-decoration: underline;
+    }
+
+    /* Feedback Form Section */
+    .feedback-form {
+        padding: 30px;
+        background: #f8f9fa;
+        text-align: center;
+    }
+
+    .feedback-form h2 {
+        font-size: 24px;
+        color: #2c3e50;
+    }
+
+    .feedback-form form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feedback-form label {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #606c76;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .feedback-form button {
+        padding: 10px 15px;
+        background: #2575fc;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .feedback-form button:hover {
+        background: #6a11cb;
+    }
+
+    /* Success Message */
+    .success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 5px;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.5s ease-in-out;
+        z-index: 9999;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    
+    /* Footer Section */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #1abc9c;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .contact-info {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<script>document.addEventListener( "DOMContentLoaded", () =>
+    {
+        const feedbackForm = document.getElementById( "feedback-form" );
+        const successMessage = document.getElementById( "success-message" );
+
+        // Handle form submission
+        feedbackForm.addEventListener( "submit", ( event ) =>
+        {
+            event.preventDefault(); // Prevent actual form submission
+
+            // Show success message
+            successMessage.classList.remove( "hidden" );
+
+            // Hide success message after 3 seconds
+            setTimeout( () =>
+            {
+                successMessage.classList.add( "hidden" );
+            }, 3000 );
+
+            // Clear the form
+            feedbackForm.reset();
+        } );
+    } );</script>

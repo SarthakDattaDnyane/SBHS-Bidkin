@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBHS Bidkin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="width-100 top-header">
+        <div class="container">
+            <b>NEWS : </b>
+            <marquee>My School : Shaping Futures, Inspiring Excellence.</marquee>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="heads">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+
+                <div class="menu">
+                    <a href="#menu" class="openicon">&#9776</a>
+                    <div id="menu">
+                        <div class="menu-inner">
+                            <a href="#" class="closeicon">&#x2715</a>
+
+                            <ul>
+                                <li><a href="index.html" style="--i:1" class="active">Home</a></li>
+                                <li><a href="about-us.html" style="--i:2"">About Us</a></li>
+                                <li><a href=" admission.html" style="--i:3"">Admission</a></li>
+                                <li><a href=" gallery.html" style="--i:4">Gallery</a></li>
+                                <li><a href="noticeboard.html" style="--i:5">Notice Board</a></li>
+                                <li><a href="events.html" style="--i:6">Events</a></li>
+                                <li><a href="tutorial.html" style="--i:7">Tutorial</a></li>
+                                <li><a href="contactus.html" style="--i:8">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <body>
+        <div class="tutorials-page">
+            <!-- Header Section -->
+            <header id="header">
+                <h1>📚 Tutorials for Students</h1>
+                <p id="current-date"></p>
+            </header>
+
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h2>Enhance Your Learning Journey</h2>
+                <p>Access subject-specific tutorials curated for school students in simple language.</p>
+            </div>
+
+            <!-- Tutorials List Section -->
+            <section id="tutorials-list">
+                <div class="tutorial-item">
+                    <h3>Mathematics: Geometry Basics</h3>
+                    <p class="tutorial-date">📅 Last Updated: 1st March 2025</p>
+                    <p>Understand the foundations of geometry with clear explanations of shapes, angles, and properties.
+                    </p>
+                    <div class="links">
+                        <p>📹 Recommended Video:</p>
+                        <a href="https://youtu.be/PefvxStEJOE" target="_blank">Geometry Basics in Hindi - YouTube</a>
+                    </div>
+                </div>
+
+                <div class="tutorial-item">
+                    <h3>Science: Water Cycle</h3>
+                    <p class="tutorial-date">📅 Last Updated: 20th February 2025</p>
+                    <p>Explore the different stages of the water cycle, including evaporation, condensation, and
+                        precipitation.</p>
+                    <div class="links">
+                        <p>📹 Recommended Video:</p>
+                        <a href="https://youtu.be/fz3YzpcHJqw" target="_blank">Water Cycle Explained in Hindi -
+                            YouTube</a>
+                    </div>
+                </div>
+
+                <div class="tutorial-item">
+                    <h3>Social Studies: India's States</h3>
+                    <p class="tutorial-date">📅 Last Updated: 15th April 2025</p>
+                    <p>Learn about India's geography, including states, capitals, and major rivers.</p>
+                    <div class="links">
+                        <p>📹 Recommended Video:</p>
+                        <a href="https://youtu.be/oWW7Jqt3S68" target="_blank">Indian States & Capitals - YouTube</a>
+                    </div>
+                </div>
+
+                <div class="tutorial-item">
+                    <h3>English: Noun and Verb Basics</h3>
+                    <p class="tutorial-date">📅 Last Updated: 10th May 2025</p>
+                    <p>Master the basics of nouns, verbs, and sentence building with simple examples for beginners.</p>
+                    <div class="links">
+                        <p>📹 Recommended Video:</p>
+                        <a href="https://youtu.be/zAIt3VbkL6g" target="_blank">English Grammar: Nouns & Verbs -
+                            YouTube</a>
+                    </div>
+                </div>
+
+                <div class="tutorial-item">
+                    <h3>Environmental Studies: Save Water</h3>
+                    <p class="tutorial-date">📅 Last Updated: 5th June 2025</p>
+                    <p>Understand the importance of water conservation and ways to save water in daily life.</p>
+                    <div class="links">
+                        <p>📹 Recommended Video:</p>
+                        <a href="https://youtu.be/GoeXJJnpRYY" target="_blank">Save Water Explained - YouTube</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer>
+                <p>📧 For tutorial-related queries, contact: <a
+                        href="mailto:tutorials@school.com">tutorials@school.com</a></p>
+                <p>&copy; 2025 School Tutorials | All Rights Reserved.</p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
+<style>
+    /* Base Styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        color: #333;
+    }
+
+    /* Tutorials Page Container */
+    .tutorials-page {
+        max-width: 1200px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Header Section */
+    #header {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    #header h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #header p {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #e0e7ff;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        text-align: center;
+        padding: 30px 20px;
+        background: #f5f7fa;
+    }
+
+    .hero-section h2 {
+        font-size: 24px;
+        color: #2c3e50;
+        margin: 0;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        color: #606c76;
+        margin-top: 10px;
+    }
+
+    /* Tutorials List Section */
+    #tutorials-list {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .tutorial-item {
+        background: #eef2f3;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        animation: slideIn 0.8s ease-out;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tutorial-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tutorial-item h3 {
+        font-size: 22px;
+        margin: 0;
+        color: #2c3e50;
+    }
+
+    .tutorial-item .tutorial-date {
+        font-size: 16px;
+        color: #6c757d;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .tutorial-item p {
+        font-size: 14px;
+        color: #7f8c8d;
+        margin-top: 10px;
+    }
+
+    .links p {
+        font-size: 14px;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    .links a {
+        color: #1abc9c;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer Section */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #1abc9c;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #tutorials-list {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<script>document.addEventListener( "DOMContentLoaded", () =>
+    {
+        const currentDate = document.getElementById( "current-date" );
+
+        // Display current date
+        currentDate.textContent = `📅 Date: ${ new Date().toLocaleDateString() }`;
+    } );</script>

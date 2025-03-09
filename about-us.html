@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBHS Bidkin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="width-100 top-header">
+        <div class="container">
+            <b>NEWS : </b>
+            <marquee>My School : Shaping Futures, Inspiring Excellence.</marquee>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="heads">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <div class="menu">
+                    <a href="#menu" class="openicon">&#9776</a>
+                    <div id="menu">
+                        <div class="menu-inner">
+                            <a href="#" class="closeicon">&#x2715</a>
+
+                            <ul>
+                                <li><a href="index.html" style="--i:1" class="active">Home</a></li>
+                                <li><a href="about-us.html" style="--i:2"">About Us</a></li>
+                                <li><a href=" admission.html" style="--i:3"">Admission</a></li>
+                                <li><a href=" gallery.html" style="--i:4">Gallery</a></li>
+                                <li><a href="noticeboard.html" style="--i:5">Notice Board</a></li>
+                                <li><a href="events.html" style="--i:6">Events</a></li>
+                                <li><a href="tutorial.html" style="--i:7">Tutorial</a></li>
+                                <li><a href="contactus.html" style="--i:8">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our School</h1><br>
+            <p>Empowering students with knowledge, creativity, and excellence.</p><br>
+            <a href="#mission" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About <b class="bos" style="color: #0004ff;">Our School</b></h2>
+        <p>Our school is dedicated to providing high-quality education, fostering creativity, and nurturing young minds
+            to become future leaders.</p>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission" class="mission">
+        <div class="mission-box">
+            <h3>🎯 Our Mission</h3><br>
+            <p>To create a learning environment that inspires curiosity, innovation, and excellence in every student.
+            </p>
+        </div><br>
+        <div class="mission-box">
+            <h3>🌟 Our Vision</h3><br>
+            <p>To shape a brighter future through quality education and holistic development.</p>
+        </div>
+    </section>
+
+    <!-- Our memimg Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="heading">Our <span>School </span></h2>
+
+            <div class="gallery">
+                <img src="abus1.jpg" class="w-100">
+                <img src="abus3.jpg" class="w-100">
+                <img src="abus4.jpg" class="w-100">
+                <img src="abus5.jpg" class="w-100">
+                <img src="abus6.jpg" class="w-100">
+                <img src="abus7.jpg" class="w-100">
+                <img src="abus8.jpg" class="w-100">
+                <img src="abus9.jpg" class="w-100">
+                <img src="abus10.jpg" class="w-100"> 
+                <img src="abus2.jpg" class="w-100">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 S.B. High School, Bidkin | All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: #f5f5f5;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('abimg.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .hero-text {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background: #0015ff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #151abd;
+    }
+
+    /* About Section */
+    .about {
+        padding: 50px 20px;
+        text-align: center;
+        background: white;
+    }
+
+    .about h2,
+    .bos {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Mission & Vision */
+    .mission {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 20px;
+        background: #0004ff;
+        color: white;
+    }
+
+    .mission-box {
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+    .mission-box:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+
+    /* Team Section */
+    .team {
+        padding: 50px 20px;
+        text-align: center;
+        background: white;
+    }
+
+    .team-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .team-member {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-member p {
+        color: #777;
+        transition: transform 0.3s;
+    }
+
+    .team-member p:hover {
+        color: #ff0000;
+        font-weight: bolder;
+    }
+
+    .team-member:hover {
+        transform: scale(1.05);
+        color: #2200ff;
+        cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
+    }
+
+    /* Bounce Animation */
+    @keyframes bounce {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-10px);
+        }
+    }
+</style>

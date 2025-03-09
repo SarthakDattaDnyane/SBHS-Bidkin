@@ -1,0 +1,247 @@
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h2 style="color: #004cff;">Admission Form <span style="color: #ff0000;">2025-26</span></h2>
+            <p style="color: #ff0000;">Fill in all required details carefully before submission.</p>
+
+            <form id="admission-form">
+                <h3>👦 Student Information</h3>
+                <div class="input-group">
+                    <label for="name">Full Name <span style="color: #ff0000;">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="dob">Date of Birth <span style="color: #ff0000;">*</span></label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender <span style="color: #ff0000;">*</span></label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="class">Class Applying For <span style="color: #ff0000;">*</span></label>
+                    <select id="class" name="class" required>
+                        <option value="">Select</option>
+                        <option value="Nursery">Nursery</option>
+                        <option value="LKG">LKG</option>
+                        <option value="UKG">UKG</option>
+                        <option value="1st Standard">1st Standard</option>
+                        <option value="2nd Standard">2nd Standard</option>
+                        <option value="3rd Standard">3rd Standard</option>
+                        <option value="4th Standard">4th Standard</option>
+                        <option value="5th Standard">5th Standard</option>
+                        <option value="6th Standard">6th Standard</option>
+                        <option value="7th Standard">7th Standard</option>
+                        <option value="8th Standard">8th Standard</option>
+                        <option value="9th Standard">9th Standard</option>
+                        <option value="10th Standard">10th Standard</option>
+                    </select>
+                </div>
+
+                <h3 style="color: #ff0000;">📄 Required Documents</h3>
+                <div class="input-group">
+                    <label for="birth-certificate">Birth Certificate <span style="color: #ff0000;">*</span></label>
+                    <input type="file" id="birth-certificate" name="birth-certificate" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="marksheet">Previous School Marksheet <span style="color: #ff0000;">*</span></label>
+                    <input type="file" id="marksheet" name="marksheet" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="aadhar">Aadhar Card <span style="color: #ff0000;">*</span></label>
+                    <input type="file" id="aadhar" name="aadhar" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="photo">Passport Size Photo <span style="color: #ff0000;">*</span></label>
+                    <input type="file" id="photo" name="photo" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pop-up Modal for Confirmation -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>🎉 Application Submitted Successfully! 🎉</h2>
+            <p>Your unique application number is: <strong id="application-number" style="color: #ff0000;"></strong></p>
+            <p>We will contact you soon for further steps.</p>
+            <a href="index.html"><button onclick="closePopup()" class="ok-btn">OK</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, #4b6cb7, #182848);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        margin-top: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        background: #004cff;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 15px;
+    }
+
+    .submit-btn:hover {
+        background: #093b9f;
+    }
+
+    /* Popup Modal */
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .ok-btn {
+        background: #004cff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .ok-btn:hover {
+        background: #093b9f;
+    }
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* By Idea  */
+
+    @media screen and (max-width:361px) {
+
+        body {
+            width: fit-content;
+        }
+    }
+</style>
+
+<script>document.getElementById( "admission-form" ).addEventListener( "submit", function ( event )
+    {
+        event.preventDefault();
+
+        let applicationNumber = "APP-" + Math.floor( Math.random() * 1000000 );
+        document.getElementById( "application-number" ).textContent = applicationNumber;
+
+        document.getElementById( "popup" ).classList.add( "show" );
+
+        this.reset();
+    } );
+
+    function closePopup ()
+    {
+        document.getElementById( "popup" ).classList.remove( "show" );
+    }</script>

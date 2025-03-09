@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBHS Bidkin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="width-100 top-header">
+    <div class="container">
+      <b>NEWS : </b>
+      <marquee>My School : Shaping Futures, Inspiring Excellence.</marquee>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="heads">
+        <div class="logo">
+          <img src="logo.png">
+        </div>
+
+        <div class="menu">
+          <a href="#menu" class="openicon">&#9776</a>
+          <div id="menu">
+            <div class="menu-inner">
+              <a href="#" class="closeicon">&#x2715</a>
+
+              <ul>
+                <li><a href="index.html" style="--i:1" class="active">Home</a></li>
+                <li><a href="about-us.html" style="--i:2"">About Us</a></li>
+                                <li><a href=" admission.html" style="--i:3"">Admission</a></li>
+                                <li><a href=" gallery.html" style="--i:4">Gallery</a></li>
+                <li><a href="noticeboard.html" style="--i:5">Notice Board</a></li>
+                <li><a href="events.html" style="--i:6">Events</a></li>
+                <li><a href="tutorial.html" style="--i:7">Tutorial</a></li>
+                <li><a href="contactus.html" style="--i:8">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="notice-board">
+      <header id="header">
+        <h1>📋 School Notice Board</h1>
+        <p id="current-date"></p>
+      </header>
+      <div class="hero-section">
+        <h2>Stay Informed, Stay Ahead</h2>
+        <p>Find all the latest updates, notices, and announcements in one place!</p>
+      </div>
+      <div class="filter-section">
+        <input type="text" id="search-bar" placeholder="🔍 Search notices...">
+        <select id="category-filter">
+          <option value="all">All Categories</option>
+          <option value="academic">Academic</option>
+          <option value="events">Events</option>
+          <option value="administrative">Administrative</option>
+        </select>
+      </div>
+      <section id="notice-list">
+        <!-- Notices will be dynamically added here -->
+      </section>
+      <footer>
+        <p>📧 Need Help? Contact: <a href="mailto:school@example.com">school@example.com</a></p>
+        <p>&copy; 2025 School Notice Board</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
+<style>
+  /* Base Styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  /* Notice Board Container */
+  .notice-board {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  /* Header Section */
+  #header {
+    background: #5a67d8;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  #header p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e2e8f0;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    background: #edf2f7;
+    padding: 20px 15px;
+  }
+
+  .hero-section h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #2d3748;
+  }
+
+  .hero-section p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #4a5568;
+  }
+
+  /* Filter Section */
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f7fafc;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  #search-bar,
+  #category-filter {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+  }
+
+  #search-bar:focus,
+  #category-filter:focus {
+    outline: none;
+    border-color: #5a67d8;
+    box-shadow: 0 0 5px rgba(90, 103, 216, 0.5);
+  }
+
+  /* Notice List Section */
+  #notice-list {
+    padding: 20px;
+    background: #ffffff;
+  }
+
+  .notice-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #edf2f7;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.6s ease;
+  }
+
+  .notice-item h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #2d3748;
+  }
+
+  .notice-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #4a5568;
+  }
+
+  .notice-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  /* Footer Section */
+  footer {
+    text-align: center;
+    background: #5a67d8;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  footer a {
+    color: #a0aec0;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .filter-section {
+      flex-direction: column;
+    }
+
+    #search-bar,
+    #category-filter {
+      margin: 8px 0;
+    }
+  }
+</style>
+<script>document.addEventListener( "DOMContentLoaded", () =>
+  {
+    const notices = [
+      { title: "Mid-Term Exam Schedule", date: "2025-03-01", category: "academic", description: "Exams start 15th March. Details on notice board." },
+      { title: "Sports Day Announcement", date: "2025-02-25", category: "events", description: "Sports Day is on 20th March. Be prepared!" },
+      { title: "Fee Submission Deadline", date: "2025-02-20", category: "administrative", description: "Last date: 10th March. Avoid late fees!" },
+      { title: "New Library Books", date: "2025-03-05", category: "academic", description: "New academic books are now available in the library!" },
+    ];
+
+    const noticeList = document.getElementById( "notice-list" );
+    const searchBar = document.getElementById( "search-bar" );
+    const categoryFilter = document.getElementById( "category-filter" );
+    const currentDate = document.getElementById( "current-date" );
+
+    // Display the current date
+    currentDate.textContent = `📅 Date: ${ new Date().toLocaleDateString() }`;
+
+    // Function to display notices
+    function displayNotices ( filteredNotices )
+    {
+      noticeList.innerHTML = "";
+      if ( filteredNotices.length === 0 )
+      {
+        noticeList.innerHTML = "<p>No notices found!</p>";
+        return;
+      }
+
+      filteredNotices.forEach( ( notice ) =>
+      {
+        const noticeItem = document.createElement( "div" );
+        noticeItem.className = "notice-item";
+        noticeItem.innerHTML = `
+        <h2>${ notice.title }</h2>
+        <p><strong>Date:</strong> ${ notice.date }</p>
+        <p>${ notice.description }</p>
+      `;
+        noticeList.appendChild( noticeItem );
+      } );
+    }
+
+    // Filtering logic
+    function filterNotices ()
+    {
+      const searchQuery = searchBar.value.toLowerCase();
+      const category = categoryFilter.value;
+
+      const filteredNotices = notices.filter( ( notice ) =>
+      {
+        const matchesCategory = category === "all" || notice.category === category;
+        const matchesSearch = notice.title.toLowerCase().includes( searchQuery ) || notice.description.toLowerCase().includes( searchQuery );
+        return matchesCategory && matchesSearch;
+      } );
+
+      displayNotices( filteredNotices );
+    }
+
+    // Event listeners
+    searchBar.addEventListener( "input", filterNotices );
+    categoryFilter.addEventListener( "change", filterNotices );
+
+    // Initial display of notices
+    displayNotices( notices );
+  } );</script>
